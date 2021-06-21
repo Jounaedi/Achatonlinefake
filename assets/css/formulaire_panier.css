@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+
+/* ---- Formulaire / Panier---- */
+
+main{
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    margin-left: 5%;
+}
+
+#page2 input{
+    display: block;
+    width: 35%;
+    padding:8px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    border: 1px solid grey;
+}
+
+.page{
+    display: none;
+    font-family: roboto;
+}
+
+.page h1 {
+    padding-bottom: 5%;
+    font-size: 28px;
+}
+
+.page div, .page .prev{
+    margin-left: 5%;
+}
+
+.page, .page button {
+    font-size: 18px;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.page-num{
+    border: 1px solid #cddbc6;
+    color: #67795e;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 0 5% 5%;
+    box-sizing: content-box;
+
+}
+
+.active{
+    color: white;
+    background-color: #889b7e;
+}

@@ -1,0 +1,19 @@
+footer {
+	display: grid;
+	background-color: #97aa8e;
+    height: 340px;
+    grid-template-columns: 1fr 0 2fr 1fr;
+    align-items: center;
+    width:100%;
+	
+}
+
+footer img {
+    width: 150px;
+    margin: 20px;
+}
+
+#mentions {
+    color: white;
+}
+
