@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JADE</title>
+    <!-- A redéfinir -->
+    <link rel="icon" href="img/logo_vert.svg">
+    <link rel="stylesheet" href="./css/page_produit.css">
+    <link rel="stylesheet" href="./css/bar_nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="homepage.html"><img src="img/logo_blanc.svg" alt="logo"></a>
+            </div> 
+            <div id="wrapper">
+              <ul id="list_cat">
+                  <li id="dropdown_menu">
+                    <div id="category_container">
+                        <div id="category">Catégorie</div>
+                        <div id="catbtn1">
+                          <img src="img/down-arrow.svg" alt="Catégorie">
+                      </div>
+                    </div>
+                    <ul id="list">
+                        <li><a href="page_produit.html">Peau normale</a></li>
+                        <li><a href="page_produit.html">Peau sèche</a></li>
+                        <li><a href="page_produit.html">Peau mixe</a></li>
+                        <li><a href="page_produit.html">Peau grasse</a></li>
+                        <li><a href="page_produit.html">Peau mature</a></li>
+                    </ul>  
+                  </li> 
+              </ul>
+            </div>
+            <div id="search_container">
+                <input type="text" placeholder="Rechercher" id="search">
+                <div id="searchbtn">
+                    <img src="img/search.svg" alt="bouton rechercher">
+                </div>
+            </div>    
+            <ul class="nav_links">
+                <li id="show_cat" >  
+                    <ul id="list_cat2">
+                        <li id="dropdown_menu2">
+                            <div id="category_container2">
+                                <div class="text">Catégorie</div>
+                                <div id="catbtn2">
+                                    <img src="img/down-arrow.svg" alt="Catégorie">
+                                </div>
+                            </div>
+                            <ul id="list_hidden">
+                                <li><a href="index.html">Peau normale</a></li>
+                                <li><a href="#">Peau sèche</a></li>
+                                <li><a href="#">Peau mixe</a></li>
+                                <li><a href="#">Peau grasse</a></li>
+                                <li><a href="#">Peau mature</a></li>
+                            </ul>
+                        </li>  
+                    </ul>
+                </li>
+                <li> 
+                    <a href="#" class="text">Wishlist</a>
+                    <img src="img/like.svg" alt="Wishlist" class="icon">
+                </li>
+                <li>
+                    <div id="btn-compte" onclick="Compte()">
+                        <img src="img/user.svg" alt="Compte" class="icon">
+                    </div>
+                </li>
+                <div id="compte-container" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Mon compte</h1>
+                        <div>
+                            <label for="nom">Nom d'utilisateur :</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div>
+                            <label for="email">E-mail :</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="password">Mot de passe :</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div>
+                            <label for="cpassword">Confirmer votre mot de passe :</label>
+                            <input type="password" id="cpassword" name="cpassword" required>
+                        </div>
+                        <div class="Register">S'inscire</div>
+                        <span>Déjà un compte ? Se connecter</span>
+                    </div>
+                    </div>
+                </div>
+                <li>
+                    <div onclick="Panier()">
+                        <a href="./panier.html">
+                            <img src="img/shopping-bag.svg" alt="Panier" class="icon">
+                            <div class="allarticle">0</div>
+                        </a>
+                    </div>
+                    <div id="compte-container" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h1>Informations</h1>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="burger_menu">
+                <div id="ligne1"></div>
+                <div id="ligne2"></div>
+                <div id="ligne3"></div>
+            </div>
+        </nav> 
+    </header>
+    <main>
+        <h1>Peau normale</h1>
+        <aside id="filter">
+            <label>Trier par:</label>
+            <select name="filter">
+                <option value="news">Nouveautés</option>
+                <option value="popular">Les plus populaire</option>
+                <option value="lowest_price">Prix: croissant</option>
+                <option value="highest_price">Prix: décroissant</option>
+                <option value="nameaz">Nom: A-Z</option>
+                <option value="nameza">Nom: Z-A</option>
+            </select>
+        </aside>
+        <section id="products">
+            <div class="product">
+                <img src="http://via.placeholder.com/400x400" class="p-img">
+                <div class="info">
+                    <h2 class="p-title">Lorem Ipsum</h2>
+                    <p class="p-desc">Ceci est une description</p>
+                    <h2 class="p-price">99€</h2>
+                    <span class="p-stock">En stock / Stock épuisé</span>
+                    <button class="p-button" onclick="append(0)">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="http://via.placeholder.com/400x400" class="p-img">
+                <div class="info">
+                    <h2 class="p-title">Lorem Ipsum</h2>
+                    <p class="p-desc">Ceci est une description</p>
+                    <h2 class="p-price">99€</h2>
+                    <span class="p-stock">En stock / Stock épuisé</span>
+                    <button class="p-button" onclick="append(1)">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="http://via.placeholder.com/400x400" class="p-img">
+                <div class="info">
+                    <h2 class="p-title">Lorem Ipsum</h2>
+                    <p class="p-desc">Ceci est une description</p>
+                    <h2 class="p-price">99€</h2>
+                    <span class="p-stock">En stock / Stock épuisé</span>
+                    <button class="p-button" onclick="append(2)">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="http://via.placeholder.com/400x400" class="p-img">
+                <div class="info">
+                    <h2 class="p-title">Lorem Ipsum</h2>
+                    <p class="p-desc">Ceci est une description</p>
+                    <h2 class="p-price">99€</h2>
+                    <span class="p-stock">En stock / Stock épuisé</span>
+                    <button class="p-button" onclick="append(3)">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="http://via.placeholder.com/400x400" class="p-img">
+                <div class="info">
+                    <h2 class="p-title">Lorem Ipsum</h2>
+                    <p class="p-desc">Ceci est une description</p>
+                    <h2 class="p-price">99€</h2>
+                    <span class="p-stock">En stock / Stock épuisé</span>
+                    <button class="p-button" onclick="append(4)">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="http://via.placeholder.com/400x400" class="p-img">
+                <div class="info">
+                    <h2 class="p-title">Lorem Ipsum</h2>
+                    <p class="p-desc">Ceci est une description</p>
+                    <h2 class="p-price">99€</h2>
+                    <span class="p-stock">En stock / Stock épuisé</span>
+                    <button class="p-button" onclick="append(5)">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="http://via.placeholder.com/400x400" class="p-img">
+                <div class="info">
+                    <h2 class="p-title">Lorem Ipsum</h2>
+                    <p class="p-desc">Ceci est une description</p>
+                    <h2 class="p-price">99€</h2>
+                    <span class="p-stock">En stock / Stock épuisé</span>
+                    <button class="p-button" onclick="append(6)">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="http://via.placeholder.com/400x400" class="p-img">
+                <div class="info">
+                    <h2 class="p-title">Lorem Ipsum</h2>
+                    <p class="p-desc">Ceci est une description</p>
+                    <h2 class="p-price">99€</h2>
+                    <span class="p-stock">En stock / Stock épuisé</span>
+                    <button class="p-button" onclick="append(7)">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="http://via.placeholder.com/400x400" class="p-img">
+                <div class="info">
+                    <h2 class="p-title">Lorem Ipsum</h2>
+                    <p class="p-desc">Ceci est une description</p>
+                    <h2 class="p-price">99€</h2>
+                    <span class="p-stock">En stock / Stock épuisé</span>
+                    <button class="p-button" onclick="append(8)">Ajouter au panier</button>
+                </div>
+            </div>
+        </section>
+        <script src="js/bar_nav.js"></script>
+        <script src="js/page_produit_1.js"></script>
+        <script src="js/page_produit_2.js"></script>
+    </main>
+    <footer>
+        <!-- Adresse -->
+        <section> 
+            <img src="img/logo_blanc.svg"> 
+        </section>
+        <!-- Réseaux sociaux -->
+        <section>
+            <a href="https://fr-fr.facebook.com/" title="Lien vers la page Facebook de Jade"><img src="img/facebook.svg" alt="Facebook Jade"></a>
+            <a href="https://www.instagram.com/?hl=fr" title="Lien vers le profil Instagram de Jadeç"><img src="img/instagram.svg" alt="Instagram Jade"></a>
+            <a href="https://twitter.com/" title="Lien vers la page Linkedin de Jade"><img src="img/twitter.svg" alt="Linkedin Jade"></a>
+        </section>
+        <!-- Mentions -->
+        <section id="mentions">
+            <span>Copyright 2021 Jade-Beauty </span>
+            <a href="https://">Mentions légales</a>
+        </section>
+    </footer>
+</body>
+</html>

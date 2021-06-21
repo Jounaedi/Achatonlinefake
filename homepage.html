@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JADE</title>
+    <!-- A redéfinir -->
+    <link rel="icon" href="img/logo_vert.svg">
+    <link rel="stylesheet" href="css/bar_nav.css">
+    <link rel="stylesheet" href="css/homepage1.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+    <body>
+        <nav>
+            <div id="logo">
+                <a href="homepage.html">
+                    <img src="img/logo_blanc.svg" alt="logo">
+                </a>
+            </div> 
+            <div id="wrapper">
+    
+              <ul id="list_cat">
+                  <li id="dropdown_menu">
+                    <div id="category_container">
+                        <div id="category">Catégorie</div>
+                        <div id="catbtn1">
+                            <img src="img/down-arrow.svg" alt="Catégorie">
+                        </div>
+                    </div>
+                    <ul id="list">
+                        <li><a href="page_produit.html">Peau normale</a></li>
+                        <li><a href="#">Peau sèche</a></li>
+                        <li><a href="#">Peau mixe</a></li>
+                        <li><a href="#">Peau grasse</a></li>
+                        <li><a href="#">Peau mature</a></li>
+                    </ul>  
+                  </li> 
+              </ul>
+            </div>
+            <div id="search_container">
+                <input type="text" placeholder="Rechercher" id="search">
+                <div id="searchbtn">
+                    <img src="img/search.svg" alt="bouton rechercher">
+                </div>
+            </div>    
+            <ul class="nav_links">
+                <li id="show_cat" >  
+                    <ul id="list_cat2">
+                        <li id="dropdown_menu2">
+                            <div id="category_container2">
+                                <div class="text">Catégorie</div>
+                                <div id="catbtn2">
+                                    <img src="img/down-arrow.svg" alt="Catégorie">
+                                </div>
+                            </div>
+                            <ul id="list_hidden">
+                                <li><a href="page_produit.html">Peau normale</a></li>
+                                <li><a href="#">Peau sèche</a></li>
+                                <li><a href="#">Peau mixe</a></li>
+                                <li><a href="#">Peau grasse</a></li>
+                                <li><a href="#">Peau mature</a></li>
+                            </ul>
+                        </li>  
+                    </ul>
+                </li>
+                <li> 
+                    <a href="#" class="text">Wishlist</a>
+                    <img src="img/like.svg" alt="Wishlist" class="icon">
+                </li>
+                <li> 
+                    <a href="#" class="text">Compte</a>
+                    <img src="img/user.svg" alt="Compte" class="icon">
+                </li>
+                <li> 
+                    <a id="number" href="./panier.html" class="text">Panier</a>
+                    <div onclick="bagsort()">
+                        <a href="./panier.html">
+                            <img src="img/shopping-bag.svg" alt="Panier" class="icon">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="burger_menu">
+                <div id="ligne1"></div>
+                <div id="ligne2"></div>
+                <div id="ligne3"></div>
+            </div>
+        </nav> 
+	<!-- Hero -->
+        
+    
+    <a id="hero" href="#main">
+        <img src="img/hero.png"> 
+    </a>
+
+<!-- Main -->
+    <main id="main">
+        <section id="section1">
+            <a href="#">
+                <h2>Notre éthique</h2>
+                <img src="img/ethique.png">
+            </a>
+        </section>
+        <section id="section2">
+                <a href="page_produit.html">
+                    <h2>Nos produits</h2>
+                    <img src="img/produit.png">
+                </a>
+        </section>
+        <section id="section3">
+            <a href="#">
+                <h2>Nouveautés</h2>
+                <img src="img/new.png">
+            </a>
+        </section>
+    </main>
+    <footer>
+        <!-- Adresse -->
+        <section> 
+            <img src="img/logo_blanc.svg"> 
+        </section>
+        <!-- Réseaux sociaux -->
+        <section>
+            <a href="https://fr-fr.facebook.com/" title="Lien vers la page Facebook de Jade"><img src="img/facebook.svg" alt="Facebook Jade"></a>
+            <a href="https://www.instagram.com/?hl=fr" title="Lien vers le profil Instagram de Jadeç"><img src="img/instagram.svg" alt="Instagram Jade"></a>
+            <a href="https://twitter.com/" title="Lien vers la page Linkedin de Jade"><img src="img/twitter.svg" alt="Linkedin Jade"></a>
+        </section>
+        <!-- Mentions -->
+        <section id="mentions">
+            <span>Copyright 2021 Jade-Beauty </span>
+            <a href="https://">Mentions légales</a>
+        </section>
+    </footer>
+    <script src="js/bar_nav.js"></script>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo_vert.svg">
+    <link rel="stylesheet" href="css/bar_nav.css">
+    <link rel="stylesheet" href="css/formulaire_panier.css">
+    <link rel="stylesheet" href="css/panier.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Jade - Panier</title>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <a href="homepage.html">
+                <img src="img/logo_blanc.svg" alt="logo">
+            </a>
+        </div> 
+        <div id="wrapper">
+
+          <ul id="list_cat">
+              <li id="dropdown_menu">
+                <div id="category_container">
+                    <div id="category">Catégorie</div>
+                    <div id="catbtn1">
+                      <img src="img/down-arrow.svg" alt="Catégorie">
+                  </div>
+                </div>
+                <ul id="list">
+                    <li><a href="page_produit.html">Peau normale</a></li>
+                    <li><a href="page_produit.html">Peau sèche</a></li>
+                    <li><a href="page_produit.html">Peau mixe</a></li>
+                    <li><a href="page_produit.html">Peau grasse</a></li>
+                    <li><a href="page_produit.html">Peau mature</a></li>
+                </ul>   
+              </li> 
+          </ul>
+        </div>
+        <div id="search_container">
+            <input type="text" placeholder="Rechercher" id="search">
+            <div id="searchbtn">
+                <img src="img/search.svg" alt="bouton rechercher">
+            </div>
+        </div>
+        <ul class="nav_links">
+            <li id="show_cat" >  
+                <ul id="list_cat2">
+                    <li id="dropdown_menu2">
+                        <div id="category_container2">
+                            <div class="text">Catégorie</div>
+                            <div id="catbtn2">
+                                <img src="img/down-arrow.svg" alt="Catégorie">
+                            </div>
+                        </div>
+                        <ul id="list_hidden">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                        </ul>
+                    </li>  
+                </ul>
+            </li>
+            <li> 
+                <a href="#" class="text">Wishlist</a>
+                <img src="img/like.svg" alt="Wishlist" class="icon">
+            </li>
+            <li> 
+                <a href="#" class="text">Compte</a>
+                <img src="img/user.svg" alt="Compte" class="icon">
+            </li>
+            <li> 
+                <a href="panier.html" class="text">Panier</a>
+                <img src="img/shopping-bag.svg" alt="Panier" class="icon">
+            </li>
+        </ul>
+        <div class="burger_menu">
+            <div id="ligne1"></div>
+            <div id="ligne2"></div>
+            <div id="ligne3"></div>
+        </div>
+    </nav> 
+    <main>
+        <button class="continue"><a href="page_produit.html">Continuer mes achats</a></button>
+        <header>
+        </header>
+        <form action="" method="POST">
+            <div class="page" id="page1">
+                <div id="panier">
+                    <h1>Panier</h1>
+                    <section class="articles"></section>
+                </div>  
+                <div id="total">
+                    <h1>Total</h1>
+                    <button class="next" type="button">Valider le panier</button>
+                    <div id="montant">
+                        <div id="sous_total">
+                            <h4>Sous-total:</h4>
+                            <span class="s_total">95</span> €
+                        </div>
+                        <div id="livraison">
+                            <h4>Livraison:</h4>
+                            <span class="livraison">5</span> €
+                        </div>
+                        <div id="prix_total">
+                            <h3>Total:</h3>
+                            <h3><span class="total">100</span> €</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="page" id="page2">
+                <h1>Informations</h1>
+                <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom">
+                </div>
+                <div>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom">
+                </div>
+                <div>
+                    <label for="adresse">Adresse :</label>
+                    <input type="text" id="adresse" name="adresse">
+                </div>
+                <div>
+                    <label for="code_postal">Code postal :</label>
+                    <input type="text" id="code_postal" name="code_postal">
+                </div>
+                <div>
+                    <label for="ville">Ville :</label>
+                    <input type="text" id="ville" name="ville">
+                </div>
+                <div>
+                    <label for="pays">Pays :</label>
+                    <input type="text" id="pays" name="pays">
+                </div>
+                <div>
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div>
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <button class="prev" type="button">Précédent</button>
+                <button class="next2" type="button">Poursuivre</button>
+            </div>
+            <div class="page" id="page3">
+                <h1>Ta commande a été validé!</h1>
+                <button><a href="homepage.html">Retourner à la page d'acceuil</a></button>
+            </div>
+        </form>
+    </main>
+    <script src="js/bar_nav.js"></script> 
+    <script src="js/panier_formulaire.js"></script>   
+    <script src="js/panier.js"></script>
+</body>
+</html>
+
