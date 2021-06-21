@@ -1,0 +1,90 @@
+[{
+    "id": 1,
+    "name": "Masque",
+    "description": "Nourissant",
+    "img_src": "img/produit-1.png",
+    "unit_price": 12.00, 
+    "available": true,
+    "quantity": 2,
+    "bag_quantity": 0 
+},
+{
+    "id": 2,
+    "name": "Sérum",
+    "description": "Nourissant de jour",
+    "img_src": "img/produit-2.png",
+    "unit_price": 9.99, 
+    "available" : true,
+    "quantity": 2,
+    "bag_quantity": 0
+},
+{
+    "id": 3,
+    "name": "Lotion tonique",
+    "description": "Rafraichissante",
+    "img_src": "img/produit-3.png",
+    "unit_price": 12.99, 
+    "available": true,
+    "quantity": 2,
+    "bag_quantity": 0
+},
+{
+    "id": 4,
+    "name": "Sérum",
+    "description": "Nourissant de nuit",
+    "img_src": "img/produit-4.png",
+    "unit_price": 16.95, 
+    "available": false,
+    "quantity": 0,
+    "bag_quantity": 0
+},
+{
+    "id": 5,
+    "name": "Crème",
+    "description": "Nourissante",
+    "img_src": "img/produit-5.png",
+    "unit_price": 10.99, 
+    "available": true,
+    "quantity": 2,
+    "bag_quantity": 0 
+},
+{
+    "id": 6,
+    "name": "Pain de savon",
+    "description": "Démaquillant",
+    "img_src": "img/produit-6.png",
+    "unit_price": 7.00, 
+    "available": true ,
+    "quantity": 2,
+    "bag_quantity": 0
+},
+{
+    "id": 7,
+    "name": "Huile visage",
+    "description": "Nourrisant et démaquillante",
+    "img_src": "img/produit-7.png",
+    "unit_price": 12.99, 
+    "available": true ,
+    "quantity": 2,
+    "bag_quantity": 0
+},
+{
+    "id": 8,
+    "name": "Pack accessoire massage du visage",
+    "description": "Pierre de Jade",
+    "img_src": "img/produit-8.png",
+    "unit_price": 14.99, 
+    "available": true ,
+    "quantity": 2,
+    "bag_quantity": 0
+},
+{
+    "id": 9,
+    "name": "6 masques",
+    "description": "Hydratant",
+    "img_src": "img/produit-9.png",
+    "unit_price": 8.00, 
+    "available": true ,
+    "quantity": 2,
+    "bag_quantity": 0
+}]
